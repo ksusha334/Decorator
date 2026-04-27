@@ -8,18 +8,18 @@ package com.mycompany.decorator;
  *
  * @author march
  */
-public class FireSauce extends Modifier{
+public class FireSauce extends Modifier {
     public FireSauce(Dish dish) {
         super(dish);
     }
-    
+
     @Override
     public String getDescription() {
-        return dish.getDescription() + " + огненный соус";
+        return super.getDescription() + " + огненный соус";
     }
-    
+
     @Override
     public int getPrice() {
-        return dish.getPrice() + 10;
-    } 
+        return super.getPrice() + 10;
+    }
 }

@@ -12,14 +12,14 @@ public class SnowBerries extends Modifier {
     public SnowBerries(Dish dish) {
         super(dish);
     }
-    
+
     @Override
     public String getDescription() {
-        return dish.getDescription() + " + снежные ягоды";
+        return super.getDescription() + " + снежные ягоды";
     }
-    
+
     @Override
     public int getPrice() {
-        return dish.getPrice() + 5;
-    }  
+        return super.getPrice() + 5;
+    }
 }

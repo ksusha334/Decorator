@@ -8,18 +8,18 @@ package com.mycompany.decorator;
  *
  * @author march
  */
-public abstract class Modifier extends Dish {
-    protected Dish dish;
-    
+public abstract class Modifier implements Dish {
+    private Dish dish;
+
     public Modifier(Dish dish) {
         this.dish = dish;
     }
-    
+
     @Override
     public String getDescription() {
         return dish.getDescription();
     }
-    
+
     @Override
     public int getPrice() {
         return dish.getPrice();

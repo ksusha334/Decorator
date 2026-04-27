@@ -8,19 +8,18 @@ package com.mycompany.decorator;
  *
  * @author march
  */
-public class NordBread extends Modifier{
-    
+public class NordBread extends Modifier {
     public NordBread(Dish dish) {
         super(dish);
     }
-    
+
     @Override
     public String getDescription() {
-        return dish.getDescription() + " + нордская лепешка";
+        return super.getDescription() + " + нордская лепешка";
     }
-    
+
     @Override
     public int getPrice() {
-        return dish.getPrice() + 7;
+        return super.getPrice() + 7;
     }
 }

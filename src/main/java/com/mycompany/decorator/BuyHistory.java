@@ -4,18 +4,20 @@
  */
 package com.mycompany.decorator;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author march
  */
-public class NordRagu implements Dish {
-    @Override
-    public String getDescription() {
-        return "Нордское рагу";
+public class BuyHistory {
+    private ArrayList<String> history = new ArrayList<>();
+
+    public void add(String text) {
+        history.add(text);
     }
 
-    @Override
-    public int getPrice() {
-        return 50;
+    public String getText() {
+        return String.join("\n", history);
     }
 }

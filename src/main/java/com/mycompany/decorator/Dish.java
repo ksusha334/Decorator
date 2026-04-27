@@ -8,16 +8,8 @@ package com.mycompany.decorator;
  *
  * @author march
  */
-public abstract class Dish {
-    protected String description;
-    protected int price;
-    
-    public String getDescription() {
-        return description;
-    }
-    
-    public int getPrice() {
-        return price;
-    }
+public interface Dish {
+    String getDescription();
+    int getPrice();
 }
 

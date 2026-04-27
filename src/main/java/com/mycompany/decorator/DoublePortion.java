@@ -12,14 +12,14 @@ public class DoublePortion extends Modifier {
     public DoublePortion(Dish dish) {
         super(dish);
     }
-    
+
     @Override
     public String getDescription() {
-        return dish.getDescription() + " + двойная порция";
+        return super.getDescription() + " + двойная порция";
     }
-    
+
     @Override
     public int getPrice() {
-        return dish.getPrice() + 20;
+        return super.getPrice() + 20;
     }
 }
