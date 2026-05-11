@@ -70,9 +70,7 @@ public class OrderPanel extends JPanel {
         if (boxes[3].isSelected()) {
             order = new NordBread(order);
         }
-
-        String time = LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
-        String record = time + " | " + order.getDescription() + " | Цена: " + order.getPrice() + " септимов\n";
+        String record = order.getDescription() + " | Цена: " + order.getPrice() + " септимов\n";
         history.add(record);
         historyArea.setText(history.getText());
 

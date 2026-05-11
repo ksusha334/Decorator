@@ -26,10 +26,4 @@ public class NordRaguApp extends JFrame {
         add(orderPanel, BorderLayout.NORTH);
         add(new JScrollPane(historyArea), BorderLayout.CENTER);
     }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new NordRaguApp().setVisible(true);
-        });
-    }
 }
